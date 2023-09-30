@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Cancion>
+<Cancion>
+    <Duracion-Año>
+        <Titulo>Rap God</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombres>Eminem</Nombres>
+                <Apellidos></Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombres>Eminem</Nombres>
+                <Apellidos></Apellidos>
+            </Productor>
+        </Productores>
+        <Sello>Aftermath</Sello>
+        <Artista>Eminem</Artista>
+        <Duracion>6:04</Duracion>
+        <Año>2013</Año>
+    </Duracion-Año>
+</Cancion>
+<Cancion>
+<Duracion-Año>
+    <Titulo>Terrenal</Titulo>
+    <Compositores>
+        <Compositor>
+            <Nombres>Julion</Nombres>
+            <Apellidos>Alvarez</Apellidos>
+        </Compositor>
+    </Compositores>
+    <Productores>
+        <Productor>
+            <Nombres>Julion</Nombres>
+            <Apellidos>Alvarez</Apellidos>
+        </Productor>
+    </Productores>
+    <Sello>Fonovisa</Sello>
+    <Artista>Julion Alvarez</Artista>
+    <Duracion>3:16</Duracion>
+    <Año>2015</Año>
+</Duracion-Año>
+</Cancion>
+<Cancion>
+<Duracion-Año>
+    <Titulo>Se Amerita</Titulo>
+    <Compositores>
+        <Compositor>
+            <Nombres>Junior</Nombres>
+            <Apellidos>H.</Apellidos>
+        </Compositor>
+    </Compositores>
+    <Productores>
+        <Productor>
+            <Nombres>Junior</Nombres>
+            <Apellidos>H.</Apellidos>
+        </Productor>
+    </Productores>
+    <Sello></Sello>
+    <Artista>Junior H</Artista>
+    <Duracion>2:59</Duracion>
+    <Año>2019</Año>
+</Duracion-Año>
+</Cancion>
