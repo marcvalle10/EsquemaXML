@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición del elemento Cancion -->
+    <xs:element name="Cancion" type="CancionType"/>
+
+    <!-- Definición del tipo de elemento Cancion -->
+    <xs:complexType name="CancionType">
+        <xs:sequence>
+            <xs:element name="Duracion-Año" type="DuracionAñoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del tipo de elemento Duracion-Año -->
+    <xs:complexType name="DuracionAñoType">
+        <xs:sequence>
+            <xs:element name="Titulo" type="xs:string"/>
+            <xs:element name="Compositores" type="CompositoresType"/>
+            <xs:element name="Productores" type="ProductoresType"/>
+            <xs:element name="Sello" type="xs:string"/>
+            <xs:element name="Artista" type="xs:string"/>
+            <xs:element name="Duracion" type="DuracionType"/>
+            <xs:element name="Año" type="AñoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del tipo de elemento Compositores -->
+    <xs:complexType name="CompositoresType">
+        <xs:sequence>
+            <xs:element name="Compositor" type="CompositorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del tipo de elemento Compositor -->
+    <xs:complexType name="CompositorType">
+        <xs:sequence>
+            <xs:element name="Nombres" type="xs:string"/>
+            <xs:element name="Apellidos" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del tipo de elemento Productores -->
+    <xs:complexType name="ProductoresType">
+        <xs:sequence>
+            <xs:element name="Productor" type="ProductorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del tipo de elemento Productor -->
+    <xs:complexType name="ProductorType">
+        <xs:sequence>
+            <xs:element name="Nombres" type="xs:string"/>
+            <xs:element name="Apellidos" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición de tipos adicionales -->
+    <xs:simpleType name="DuracionType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]+:[0-5][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AñoType">
+        <xs:restriction base="xs:gYear"/>
+    </xs:simpleType>
+
+</xs:schema>
